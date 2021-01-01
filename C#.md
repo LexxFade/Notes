@@ -18,25 +18,48 @@ This can be done in 1-line with the addition of a [shell script](https://github.
 
 ## Hello World 
 Like C++, to add functionality to a C# script certain files must be imported. <br>
-`Namespace` is more or less like a `module` in ruby- a collection of methods.
+`Namespace` is more or less like a `module` in ruby- a collection of methods. Code would compile without error even without them.
 
 ```cs
 learning.cs
 --------------------------------------------------------
-using System;
+using System;                                       // using derective
 
+namespace Learning                                  // namespace declaration
+{                                                   // namespace block [start]
+    class Program                                   // create class
+    {                                               // class block [start]
+        static void Main(string[] args)             // create method
+        {                                           // method block [start]
+            // Main code will come here
+            Console.WriteLine("Hello World");       // expression statement
+        }                                           // method block [end]
+    }                                               // class block [end]
+}                                                   // namespace block [end]
+```
+### Rules
+- `using directives` and `expresion statement`ends with `;`
+- `namespaces`, `classes` and `methods` use `{ }`
+
+Only 1 function can be called `Main` and be `Static`.<br>
+`using System;` allows the file to use `System` namespace <u>without having to **fully qualify**</u>.<br>
+Without it, this same code would be-
+```cs
+learning.cs
+--------------------------------------------------------
 namespace Learning
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // Main code will come here
-            Console.WriteLine("Hello World");
+            System.Console.WriteLine("Hello World");
         }
     }
 }
+
 ```
+**Key Term:** `code block is code between {}`
 
 <br>
 
@@ -116,5 +139,6 @@ Arithmetic
 |     %     | Modulus       | Returns the division remainder    | x % y     |
 |     ++    | Increment     | Increment of 1                    | x++       |
 |     --    | Decrement     | Decrement of 1                    | x--       |
+
 
 
