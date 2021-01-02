@@ -59,7 +59,8 @@ namespace Learning
 }
 
 ```
-**Key Term:** `code block is code between {}`
+**Key Term:** `code block is code between {}`<br>
+\* `Console` is a function in the`System` namespace.
 
 <br>
 
@@ -117,7 +118,12 @@ string numerical_string = Convert.ToString(trial_int);
 
 ## Basic Input Output
 `Console.WriteLine` is same as ruby `puts`, while `Console.Write` is same as ruby `print`.<br>
-Unlike ruby and python, `Console.WriteLine(var_a + var_b)` is possible when `type(var_a) != type(var_b)`.<br>
+Unlike ruby and python, `Console.WriteLine(var_a + var_b)` is possible when `type(var_a) != type(var_b)`.
+
+vars can be print in middle of strings like-
+```cs
+Console.WriteLine($"some string data {variable}")
+```
 
 User input is read by `Console.ReadLine()`. It only returns string.
 ```cs
@@ -127,6 +133,7 @@ int userInput = Console.ReadLine();
 RIGHT WAY
 int userInput = Convert.ToInt32(Console.ReadLine());
 ```
+
 
 ## Operators
 Arithmetic
@@ -139,6 +146,4 @@ Arithmetic
 |     %     | Modulus       | Returns the division remainder    | x % y     |
 |     ++    | Increment     | Increment of 1                    | x++       |
 |     --    | Decrement     | Decrement of 1                    | x--       |
-
-
 
