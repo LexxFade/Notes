@@ -39,7 +39,7 @@ namespace Learning                                  // namespace declaration
 ```
 ### Rules
 - `using directives` and `expresion statement`ends with `;`
-- `namespaces`, `classes` and `methods` use `{ } except if it is a one line method then its the form => expression`
+- `namespaces`, `classes` and `methods` use `{ }` *\*except if it is a one line method then its the form => expression*
 
 Only 1 function can be called `Main` and be `Static`.<br>
 `using System;` allows the file to use `System` namespace <u>without having to **fully qualify**</u>.<br>
