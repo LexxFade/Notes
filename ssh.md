@@ -30,7 +30,7 @@ A system can have different keys for different hosts, and these new key are adde
 
 ### Public-Key can be added to the server in one line with the command:
 `cat ~/.ssh/id_rsa.pub | ssh user@host "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys`
-Or
+<br>Or<br>
 `ssh-copy-id -i ~/.ssh/mykey user@host`
 ## Transfering Data
 command to copy file from local system to the host- <br>`scp [filepath] user@host:[path to paste the file at]`
