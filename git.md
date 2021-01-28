@@ -47,3 +47,15 @@ Each commit contains:
 View files at staging area- `git ls-files`
 
 To remove files from a repo, `git rm file(s)` is a better alternative than rm `file(s)` as it also removed the file from staging area.
+
+
+## Adding local repositories to github
+
+### via SSH \[recommended]
+Considering Github already has your public key saved,
+```sh
+$ git remote add origin git@github.com:{USERNAME}/{REPOSITORY_NAME}
+$ git branch -M {BRANCH NAME; usually main}
+$ git push -u origin {SAME BRANCH NAME AS ABOVE}
+```
+\*same can be done via **http** though that would work ONLY if you dont have 2fa on GitHub
