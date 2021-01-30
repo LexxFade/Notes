@@ -42,3 +42,19 @@ command to copy file from the host to local system- <br>`scp -P [port number] us
 In the **SSHD** config `/etc/ssh/sshd_config`, on the host, root login can be disabled by setting- <br>
 `PermitRootLogin no`. <br>
 Then to make changes take place- `sudo systemctl reload sshd` (for host with systemd init system).
+
+
+## Disabling Protocol-1
+There are 2 versions of SSH protocol are used, though protol 1 is quite vulnerable \([reference](https://en.wikipedia.org/wiki/Ssh#SSH-1)\) and thereforeit is not recommended to use.<br>To disable the use of protocol 1, open the file `/etc/ssh/sshd_config`, search for `protol` settings in there and then  remove 1.
+- before
+```sh
+/etc/ssh/sshd_config
+---------------------------
+protocol 2, 1
+```
+- after
+```sh
+/etc/ssh/sshd_config
+---------------------------
+protocol 2
+```
