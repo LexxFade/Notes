@@ -18,7 +18,7 @@ This can be done in 1-line with the addition of a [shell script](https://github.
 
 ## Hello World 
 Like C++, to add functionality to a C# script certain files must be imported. <br>
-`Namespace` is more or less like a `module` in ruby- a collection of methods. Code would compile without error even without them.
+`Namespace` is more or less like a `module` in ruby- a collection of methods; i.e. code would compile both with and without them.
 
 ```cs
 learning.cs
