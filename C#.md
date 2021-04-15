@@ -150,9 +150,19 @@ Arithmetic
 
 ## String Methods
 ```cs
-string.ToUpper()                convert string to all caps
-string.ToLower()                convert string to all lower case
-string.Contains("text")         search for "text" in string; returns bool
-string.IndexOf("text")          returns for index of a letter/phrase in a string; returns -1 if not found
-string.Substring()              like python slicing
+string.ToUpper()                // convert string to all caps
+string.ToLower()                // convert string to all lower case
+string.Contains("text")         // search for "text" in string; returns bool
+string.IndexOf("text")          // returns for index of a letter/phrase in a string; returns -1 if not found
+string.Substring()              // like python slicing
+```
+
+
+## Math Methods
+```cs
+Math.Abs(number)                // absolute value of given number
+Math.Abs(a, b)                  // would return a^b
+Math.Sqrt(a)                    // basically a^(0.5)
+Math.Max(a, b)                  // would return bigger number
+Math.Round(a)                   // round a using standard rounding rules
 ```
