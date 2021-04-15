@@ -147,3 +147,12 @@ Arithmetic
 |     ++    | Increment     | Increment of 1                    | x++       |
 |     --    | Decrement     | Decrement of 1                    | x--       |
 
+
+## String Methods
+```cs
+string.ToUpper()                convert string to all caps
+string.ToLower()                convert string to all lower case
+string.Contains("text")         search for "text" in string; returns bool
+string.IndexOf("text")          returns for index of a letter/phrase in a string; returns -1 if not found
+string.Substring()              like python slicing
+```
