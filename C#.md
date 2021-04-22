@@ -166,3 +166,22 @@ Math.Sqrt(a)                    // basically a^(0.5)
 Math.Max(a, b)                  // would return bigger number
 Math.Round(a)                   // round a using standard rounding rules
 ```
+
+
+## Arrays
+All elements in an array should be of same type
+```cs
+//Creating arrays: method 1
+int[] int_array = {3145, 753, 5634, 415, 879, 2};
+Console.WriteLine(int_array[2]);        // would print 5634
+
+//Creating arrays: method 2
+int_array[2] = 213;
+Console.WriteLine(int_array[2]);        // would print 213
+
+string[] string_array = new string[3];  // this array would be of length 3
+string_array[0] = "some string";
+string_array[1] = "some string";
+string_array[2] = "some string";
+string_array[3] = "some string";        // would give error
+```
